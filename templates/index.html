@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload PDF | Chat with Docs</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-family: "Poppins", sans-serif;
+    }
+    .upload-box {
+      background: white;
+      color: #333;
+      border-radius: 20px;
+      padding: 40px;
+      text-align: center;
+      width: 400px;
+      box-shadow: 0px 8px 25px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease;
+    }
+    .upload-box:hover {
+      transform: scale(1.02);
+    }
+    .upload-btn {
+      background: #2575fc;
+      color: white;
+      border-radius: 10px;
+      padding: 10px 20px;
+      border: none;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+    .upload-btn:hover {
+      background: #1e63d6;
+    }
+  </style>
+</head>
+<body>
+  <div class="upload-box">
+    <h2 class="mb-4">📄 Upload a PDF</h2>
+    <form method="POST" enctype="multipart/form-data">
+      <input class="form-control mb-3" type="file" name="pdf_file" accept=".pdf" required>
+      <button type="submit" class="upload-btn">Upload & Chat</button>
+    </form>
+  </div>
+</body>
+</html>
